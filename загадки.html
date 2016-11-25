@@ -1,0 +1,38 @@
+<meta charset="utf-8">
+<script>
+var score = 0;
+var z1 = '';
+var z2 = '';
+
+var z1 = prompt("Пятак есть, а ничего не купит:");
+
+if (z1=="свинья") {
+	alert("Правильно!");
+	score = score + 1;
+} else {
+	alert("Неправильно(");
+	var p1 = prompt("Попробуй ещё раз:");
+		if (p1=="свинья") {
+		alert("Правильно!")	
+		score = score + 1
+	} else {
+		alert("Неправильно(")}
+}
+
+var z2 = prompt("Не шагом ходит, не бегает, а прыгает:");
+
+if (z2=="лягушка") {
+	alert("Правильно!");
+	score = score + 1;
+} else {
+	alert("Неправильно(");
+	var p2 = prompt("Попробуй ещё раз:");
+		if (p2=="лягушка") {
+		alert("Правильно!")	
+		score = score + 1;
+	} else {
+		alert("Неправильно(")}
+}
+alert("Верных ответов:" + score );
+alert("Конец");
+</script>
